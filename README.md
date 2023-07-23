@@ -250,7 +250,7 @@ AND prix.id_genre='$ID' ;
 
 ### 1. INTERFACE
 
-![[Pasted image 20230722094411.png]]
+(image/admin.jpeg)
 - **Page initiale**
 	- index.html : point d'entrée au site web http://bbfilm.rf.gd/index.html
 
