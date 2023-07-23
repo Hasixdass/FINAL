@@ -1,4 +1,19 @@
+# LibraryFilms
+
+## Bibliothèque de films:  
+Création d'une page utilisateur permettant aux utilisateurs d'acheter et de découvrir les dernières nouveautés du film, tandis que l'administrateur est chargé de la gestion des données
+
+## site (new) update : http://bbfilm.rf.gd/
+
+## Mot de passe de l'administration:
+Nom d'utilisateur : admin
+Mot de passe : admin
+
+# PRESENTATION DU PROJET
 # I. Base de donnée
+
+### Diagramme de la base de donnés
+
 
 ### Création de la base de donnée: "libraryfilms"
 ```MYSQL
@@ -231,23 +246,70 @@ AND prix.id_genre='$ID' ;
 
 
 # III. PROJET
+## FONCTIONNEMENT DES DIFFERENTES PAGES DU PROJET
 
-### À propos du projet
-
-SYSTEME DE RECHERCHE DE FILMS : 
-	Création d'une page utilisateur où les utilisateurs peuvent à la fois acheter et découvrir les dernières nouveautés du film,  tandis que l'administrateur est chargé de la gestion des données
-
-## 1. LOGIN
+### 1. INTERFACE
 
 ![[Pasted image 20230722094411.png]]
+- **Page initiale**
+	- index.html : point d'entrée au site web http://bbfilm.rf.gd/index.html
 
+- **Page de connexion**
+	- login.php : Donne accès à des fonctionnalités exclusives pour les utilisateurs enregistrés
+	- loginAdmin.php : Donne accès à des fonctionnalités exclusives d'administrateur.
+	- logout.php : Permet de mettre fin à la session en toute sécurité.
 
-## 2. PAGE DE L'UTILISATEUR
+- **Page d'inscription**
+	- inscription.php : Permet de créer un compte personnalisé.
+
+### 2. PAGE DE L'UTILISATEUR
 
 ![[Capture d’écran 2023-07-22 093145 (2).png]]
 
+- **Page d'information de la base de donnée**
+	- bddConnect.php
 
-## 3. PAGE DE l'ADMINISTRATEUR
+- **Page d'acceuil**
+	- acceuil.php: Permet de regarder ou chercher les nouveaux films disponibles à l'achat.
+
+- **Page d'achat**
+	- pageAchat.php : Permet d'acheter le film qu'on choisit.
+	- traitementSolde.php : Permet de traiter le solde restant de l'utilisateur.
+	- confirmationAchat.php : Confirmer l'achat et de l'envoyer par e-mail si le solde correspond
+
+### 3. PAGE DE l'ADMINISTRATEUR
 
 ![[Pasted image 20230722094016.png]]
+- **Page d'acceuil de l'administration**
+	- acceuilAdmin.php
 
+- **Liste de tous les film**
+	- listFilm.php 
+
+- **Ajouter/supprimer un film**
+	- ajoutFilm.php
+	- enregistrement.php
+	- suppressionFilm.php
+
+- **Prix du film**
+	- prixFilm.php
+
+- **Modification/suppression prix du film**
+	- modificationGenreEtPrix.
+	- RetourModification.php
+	- UpdateGenreEtPrix.php
+	- suppression.php
+
+- **Reglage des prix** 
+	- reglagePrix.php
+	- RetourReglagePrix.php
+
+- **Page d'erreur**
+	- erreurSuppression.php
+
+- **Page de confirmation**
+	- RetourOk.php
+
+- **Page pour gerer le solde de l'utilisateur
+	- solde.php
+	- RetourSolde.php
