@@ -6,7 +6,7 @@ Création d'une page utilisateur permettant aux utilisateurs d'acheter et de dé
 ## site (new) update : http://bbfilm.rf.gd/
 
 ## Mot de passe de l'administration:
-Nom d'utilisateur : admin
+Nom d'utilisateur : admin<br>
 Mot de passe : admin
 
 # PRESENTATION DU PROJET
